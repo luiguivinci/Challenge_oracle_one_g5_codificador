@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codificador de texto</title>
+
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+      integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js"
+      integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../assets/js/app.js"></script>
+    <script src="../assets/js/encriptar.js"></script>
+    <script src="../assets/js/desencriptar.js"></script>
+  </head>
+  <div class="container-fluid">
+    <div class="row mb-3">
+      <div class="col-12">
+        <header class="card-header">
+          <h1 class="text-center h1 mb-0">CODIFICADOR DE TEXTO</h1>
+          <h4 class="text-center h4">Challenge Oracle ONE G5</h4>
+        </header>
+      </div>
+    </div>
+    <div class="row m-2">
+      <div class="col-12">
+        <body class="card-body">
+          <div class="row">
+            <div class="col-12">
+              <section>
+                <label for="txtInputEncriptar" class="form-label">Texto</label>
+                <textarea
+                  class="form-control"
+                  id="txtInputEncriptar"
+                  rows="3"
+                ></textarea>
+
+                <label for="txtOutpuEncriptar" class="form-label mt-4"
+                  >Codificado</label
+                >
+                <textarea
+                  class="form-control"
+                  id="txtOutpuEncriptar"
+                  rows="3"
+                ></textarea>
+              </section>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-12">
+              <section>
+                <button class="btn btn-primary col-3" id="btnEncriptar">
+                  Encriptar
+                </button>
+                <button class="btn btn-danger col-3" id="btnDesencriptar">
+                  Desencriptar
+                </button>
+              </section>
+            </div>
+          </div>
+        </body>
+      </div>
+    </div>
+    <footer></footer>
+  </div>
+</html>
