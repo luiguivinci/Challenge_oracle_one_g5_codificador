@@ -9,13 +9,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Declaración de interacciones de eventos
   btnEncriptar.addEventListener("click", () => {
-    const input = txtInputEncriptar.value;
-    const output = encriptar(input);
-    txtOutpuEncriptar.value = output;
+    if (txtInputEncriptar.value !== "") {
+      let input = txtInputEncriptar.value;
+      const output = encriptar(input);
+      txtInputEncriptar.value = "";
+      txtOutpuEncriptar.value = output;
+    }
   });
   btnDesencriptar.addEventListener("click", () => {
-    const input = txtOutpuEncriptar.value;
-    const output = desencriptar(input);
-    txtInputEncriptar.value = output;
+    if (txtOutpuEncriptar.value !== "") {
+      let input = txtOutpuEncriptar.value;
+      const output = desencriptar(input);
+      txtOutpuEncriptar.value = "";
+      txtInputEncriptar.value = output;
+    }
   });
 });
