@@ -5,7 +5,7 @@
  */
 function desencriptar(str_texto = "") {
   if (str_texto !== "") {
-    let cadena = str_texto.toLocaleLowerCase();
+    let cadena = validadorTexto(str_texto);
     // Reemplazar "ai" por "a"
     cadena = cadena.replace(/ai/g, "a");
 

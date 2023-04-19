@@ -5,7 +5,7 @@
  */
 function encriptar(str_texto = "") {
   if (str_texto !== "") {
-    let textoArray = str_texto.toLocaleLowerCase();
+    let textoArray = validadorTexto(str_texto);
     textoArray = textoArray.split("");
     let textoCodificadoArray = new Array();
     let textoCodificadoOutput;
